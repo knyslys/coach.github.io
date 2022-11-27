@@ -1,0 +1,150 @@
+$backgroundColor: #020307;
+$greyColor: #2c2c2b;
+$orangeColor: #f0b38c;
+$greenColor: #afd7b3;
+$defaultFont: 1.6rem;
+$titleFont: 10rem;
+$sectionTitleFont: 5rem;
+$text-shade-01: #020307;
+$purpleColor: rgb(219, 134, 195);
+$blueColor: rgb(173, 235, 246);
+.mg-bot-sm {
+  margin-bottom: 2rem;
+}
+
+.mg-bot-md {
+  margin-bottom: 4rem;
+}
+
+.container {
+  max-width: 80vw;
+  // padding: 2rem;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-weight: 500;
+  &--grey {
+    background-color: $greyColor;
+    color: #fff;
+    transition: 0.5s all linear;
+    &:hover {
+      background-color: #4f4f4f;
+    }
+  }
+
+  &--green {
+    background-color: $greenColor;
+    color: $text-shade-01;
+  }
+
+  &--white {
+    background-color: #fff;
+    color: $text-shade-01;
+  }
+
+  &--black {
+    background-color: $backgroundColor;
+    color: #fff;
+  }
+}
+
+.section-title {
+  font-size: $sectionTitleFont;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.title {
+  text-transform: uppercase;
+  font-size: $titleFont;
+  font-weight: 700;
+}
+
+//text colors
+.color {
+  &--orange {
+    color: $orangeColor;
+  }
+
+  &--green {
+    color: $greenColor;
+  }
+}
+
+//icon colors
+.icon {
+  &__color {
+    &--green {
+      fill: $greenColor;
+    }
+
+    &--orange {
+      fill: $orangeColor;
+    }
+
+    &--blue {
+      fill: rgb(118, 197, 246);
+    }
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.full-line {
+  display: block;
+}
+
+// animations
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.fast-to-left {
+}
+
+@keyframes fast {
+  0% {
+    transform: translateX(-150%);
+    // transform: translateZ(20deg);
+  }
+
+  75% {
+    transform: rotateZ(0);
+  }
+  85% {
+    transform: rotateZ(2.5deg);
+  }
+  100% {
+    transform: translateX(0);
+    // transform: translateZ(0);
+  }
+}
+
+@keyframes showStars {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

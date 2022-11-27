@@ -1,0 +1,113 @@
+@media screen and (max-width: 81.25em) {
+  .search {
+    &__benefits {
+      // grid-template-columns: 30rem 30rem !important;
+      justify-content: center;
+      &__col {
+        // display: flex;
+        // flex-direction: column;
+        // // justify-content: center;
+        // align-items: center;
+        // text-align: left !important;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 63em) {
+  .white-bg {
+    .about {
+      &__textbox {
+        grid-row: 1/2;
+      }
+    }
+  }
+}
+
+// mobile navigation
+@media only screen and (max-width: 57.5em) {
+  .mobile-nav {
+    display: block !important;
+    .mobile-nav__icon--open-icon {
+      display: none;
+    }
+    &__icon {
+      font-size: 3rem;
+    }
+
+    &--open {
+      .mobile-nav__icon--close-icon {
+        display: none;
+      }
+      .mobile-nav__icon--open-icon {
+        display: block;
+      }
+    }
+  }
+
+  .mobile-nav ~ .nav-bar__list,
+  .mobile-nav ~ .nav-bar__user {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 53em) {
+  .coaches {
+    grid-template-columns: 50rem !important;
+  }
+  .footer {
+    grid-template-columns: repeat(4, 1fr) !important;
+    &__col {
+      &--logo {
+        grid-column: 1/-1 !important;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 37em) {
+  html {
+    font-size: 37.5%;
+  }
+
+  .header {
+    max-height: 70vh;
+    padding-bottom: 7.5rem;
+  }
+
+  .search {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    &__benefits {
+      grid-template-columns: 1fr !important;
+      &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 28em) {
+  .footer {
+    gap: 2rem;
+    // &__col {
+    //   &--solutions {
+    //     grid-column: span 2;
+    //   }
+    //   &--coaching {
+    //     grid-column: span 2;
+    //   }
+    // }
+  }
+
+  .about {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+  }
+}
